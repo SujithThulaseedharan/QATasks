@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="NatureWay Test Automation Test Suite" parallel="methods">
+
+	<listeners>
+		<listener class-name="com.nature.listeners.Listener" />
+		<listener class-name="com.nature.report.Extent" />
+	</listeners>
+
+
+	<test name="trello  Test Cases">
+
+
+		<classes>
+			<class name="com.nature.testcases.LoginPageTest"></class>
+			<class name="com.nature.testcases.HomePageTest"></class>
+			<class name="com.nature.testcases.VerifyItemQuantityTest"></class>
+			<class name="com.nature.testcases.DeleteItemTest"></class>
+
+
+		</classes>
+	</test>
+</suite>

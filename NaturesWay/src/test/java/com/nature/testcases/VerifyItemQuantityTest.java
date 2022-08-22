@@ -1,0 +1,48 @@
+package com.nature.testcases;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.nature.base.TestBase;
+import com.nature.pages.DeleteItemFromCart;
+import com.nature.pages.GetItemQuantity;
+import com.nature.pages.HomePage;
+import com.nature.pages.LoginPage;
+
+public class VerifyItemQuantityTest extends TestBase {
+	LoginPage loginPage;
+	HomePage homepage;
+	GetItemQuantity getItemQuantity;
+	DeleteItemFromCart deleteItemCart;
+
+	public VerifyItemQuantityTest() throws IOException {
+		super();
+	}
+
+	@BeforeMethod
+	public void setUp() throws IOException, InterruptedException {
+		initialization();
+		loginPage = new LoginPage();
+		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		loginPage = new LoginPage();
+	}
+
+	@Test(priority = 1)
+	public void ItemQuantityVerification() throws InterruptedException {
+		getItemQuantity = new GetItemQuantity();
+		getItemQuantity.OpenCart();
+		String Element = getItemQuantity.ItemQuantity();
+		Assert.assertEquals(Element, "3");
+
+	}
+
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+}

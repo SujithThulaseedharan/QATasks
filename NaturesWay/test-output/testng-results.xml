@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-18T12:55:19 CEST" name="NatureWay Test Automation Test Suite" finished-at="2022-08-18T12:55:51 CEST" duration-ms="32650">
+    <groups>
+    </groups>
+    <test started-at="2022-08-18T12:55:19 CEST" name="trello  Test Cases" finished-at="2022-08-18T12:55:51 CEST" duration-ms="32650">
+      <class name="com.nature.testcases.DeleteItemTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nature.testcases.DeleteItemTest@7f0eb4b4]" started-at="2022-08-18T12:55:19 CEST" name="setUp" finished-at="2022-08-18T12:55:41 CEST" duration-ms="22156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyDeleteAction()[pri:1, instance:com.nature.testcases.DeleteItemTest@7f0eb4b4]" started-at="2022-08-18T12:55:41 CEST" name="VerifyDeleteAction" finished-at="2022-08-18T12:55:51 CEST" duration-ms="10389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDeleteAction -->
+      </class> <!-- com.nature.testcases.DeleteItemTest -->
+    </test> <!-- trello  Test Cases -->
+  </suite> <!-- NatureWay Test Automation Test Suite -->
+</testng-results>
