@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Baze Test Automation Test Suite" parallel="methods">
+
+	<listeners>
+		<listener class-name="baze.Listeners.Listener" />
+		<listener class-name="baze.Report.Extent" />
+		
+	</listeners>
+
+
+	<test name="Baze Test Cases">
+
+
+		<classes>
+			<class name="baze.testcases.LoginTest"></class>
+			<class name="baze.testcases.ResetTest"></class>
+			
+			
+
+		</classes>
+	</test>
+</suite>
